@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<style>
+    *{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     {
+        .container{
+            width: 38px; ;
+            height: 20px;
+            display:flex ;
+            margin: 2rem;
+            border: 1px solid red;
+            box-shadow: .5rem .3rem .3rem .01rem chocolate;
+
+        }   
+     }
+</style>
+
+<body>
+
+    <script>
+        /*
+        Estrutura condicional (Selection): switch-case
+        Variave 
+        Estrada/saída de dados.
+        */
+       var produto = prompt ("Informe produto")
+       switch(produto.toLocaleUpperCase()){
+        case "arroz":
+            document.write("<div class=' produto'> Você escolheu arroz.</div>");
+            document.write("<div class=' preço'> Volor: R$ 6,79/<div>");
+            break;
+            case "feijão":
+            document.write("<div class=' aviso'> feijão tem ~.</div>");
+        case "feijão":
+            document.write("<div class=' produto'> Você escolheu feijão.</div>");
+            document.write("<div class=' preço'> Volor: R$ 5,79/<div>");
+            break;
+        case "café":
+            document.write("<div class=' aviso'> café tem ´.</div>");
+        case "café":
+            document.write("<div class=' produto'> Você escolheu café.</div>");
+            document.write("<div class=' preço'> Volor: R$ 8,79/<div>");
+            break;
+        default:
+            document.write("<div class=' erro'> produtão não encontardo.</div>");
+            
+       }
+    </script>
+    
+</body>
+</html>
